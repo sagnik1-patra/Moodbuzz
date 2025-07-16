@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intense Energy - MoodBuzz</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/angry.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="angry-mood">
+    <div class="main-container">
+        <!-- Animated Background -->
+        <div class="animated-bg">
+            <div class="glitch-overlay"></div>
+            <div class="lightning"></div>
+            <div class="lightning"></div>
+            <div class="fire-particle"></div>
+            <div class="fire-particle"></div>
+            <div class="fire-particle"></div>
+        </div>
+        
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-container">
+                <h1 class="logo glitch-text">MoodBuzz</h1>
+            </div>
+            <div class="mood-indicator">
+                <div class="mood-icon">😡</div>
+                <span class="mood-status">Anger Detected</span>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="glass-card mood-card">
+                <div class="card-glow"></div>
+                <div class="mood-header">
+                    <h2 class="mood-title">Fierce Energy</h2>
+                    <p class="mood-subtitle">Transform this power into action</p>
+                </div>
+
+                <div class="mood-description">
+                    <p>Your anger is a powerful emotion that signals something important needs attention. Channel this intense energy constructively - use it to fuel positive change, set boundaries, or address what's bothering you.</p>
+                </div>
+
+                <div class="music-player">
+                    <div class="player-header">
+                        <h3>Power Anthems</h3>
+                    </div>
+                    <div class="player-controls">
+                        <button class="play-btn" id="playButton">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                        <div class="track-info">
+                            <div class="track-title">Thunder Strike</div>
+                            <div class="track-artist">Intensity Beats</div>
+                        </div>
+                        <div class="volume-control">
+                            <div class="volume-bars">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+
+                <div class="mood-activities">
+                    <h3>Channel Your Energy</h3>
+                    <div class="activities-grid">
+                        <div class="activity-card">
+                            <div class="activity-icon">💪</div>
+                            <span>Intense Workout</span>
+                        </div>
+                        <div class="activity-card">
+                            <div class="activity-icon">🥊</div>
+                            <span>Combat Sports</span>
+                        </div>
+                        <div class="activity-card">
+                            <div class="activity-icon">🎯</div>
+                            <span>Goal Setting</span>
+                        </div>
+                        <div class="activity-card">
+                            <div class="activity-icon">🔥</div>
+                            <span>Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Scan Again Button -->
+        <div class="scan-again-container">
+            <button class="scan-again-button" onclick="window.location.href='index.html'">
+                <span class="button-text">Scan Again</span>
+                <div class="button-glow"></div>
+            </button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 MoodBuzz. Harness your inner fire.</p>
+        </footer>
+    </div>
+
+    <script src="src/scripts/mood-player.js"></script>
+</body>
+</html>

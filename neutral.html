@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balanced State - MoodBuzz</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/neutral.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="neutral-mood">
+    <div class="main-container">
+        <!-- Animated Background -->
+        <div class="animated-bg">
+            <div class="floating-orb"></div>
+            <div class="floating-orb"></div>
+            <div class="floating-orb"></div>
+            <div class="grid-pattern"></div>
+        </div>
+        
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-container">
+                <h1 class="logo">MoodBuzz</h1>
+            </div>
+            <div class="mood-indicator">
+                <div class="mood-icon">😐</div>
+                <span class="mood-status">Neutral State</span>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="glass-card mood-card">
+                <div class="card-glow"></div>
+                <div class="mood-header">
+                    <h2 class="mood-title">Balanced Equilibrium</h2>
+                    <p class="mood-subtitle">Finding peace in stillness</p>
+                </div>
+
+                <div class="mood-description">
+                    <p>You're in a calm, centered state - a perfect foundation for mindful reflection and intentional action. This balanced energy allows you to observe, think clearly, and make thoughtful decisions without emotional turbulence.</p>
+                </div>
+
+                <div class="music-player">
+                    <div class="player-header">
+                        <h3>Ambient Soundscapes</h3>
+                    </div>
+                    <div class="player-controls">
+                        <button class="play-btn" id="playButton">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                        <div class="track-info">
+                            <div class="track-title">Zen Garden</div>
+                            <div class="track-artist">Peaceful Minds</div>
+                        </div>
+                        <div class="volume-control">
+                            <div class="volume-bars">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+
+                <div class="mood-activities">
+                    <h3>Mindful Practices</h3>
+                    <div class="activities-grid">
+                        <div class="activity-card">
+                            <div class="activity-icon">🧘</div>
+                            <span>Meditation</span>
+                        </div>
+                        <div class="activity-card">
+                            <div class="activity-icon">📚</div>
+                            <span>Reading</span>
+                        </div>
+                        <div class="activity-card">
+                            <div class="activity-icon">🎨</div>
+                            <span>Creative Work</span>
+                        </div>
+                        <div class="activity-card">
+                            <div class="activity-icon">🌱</div>
+                            <span>Nature Walk</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Scan Again Button -->
+        <div class="scan-again-container">
+            <button class="scan-again-button" onclick="window.location.href='index.html'">
+                <span class="button-text">Scan Again</span>
+                <div class="button-glow"></div>
+            </button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 MoodBuzz. Embrace the calm.</p>
+        </footer>
+    </div>
+
+    <script src="src/scripts/mood-player.js"></script>
+</body>
+</html>

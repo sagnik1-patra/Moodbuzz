@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Vibes - MoodBuzz</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/happy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="happy-mood">
+    <div class="main-container">
+        <!-- Animated Background -->
+        <div class="animated-bg">
+            <div class="sunburst"></div>
+            <div class="sunburst"></div>
+            <div class="sunburst"></div>
+            <div class="floating-emoji">😊</div>
+            <div class="floating-emoji">🌟</div>
+            <div class="floating-emoji">✨</div>
+            <div class="floating-emoji">🎵</div>
+        </div>
+        
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-container">
+                <h1 class="logo">MoodBuzz</h1>
+            </div>
+            <div class="mood-indicator">
+                <div class="mood-icon">😊</div>
+                <span class="mood-status">Happy Detected</span>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="glass-card mood-card">
+                <div class="card-glow"></div>
+                <div class="mood-header">
+                    <h2 class="mood-title">Radiating Joy</h2>
+                    <p class="mood-subtitle">Your happiness is contagious!</p>
+                </div>
+
+                <div class="mood-description">
+                    <p>You're glowing with positive energy right now! This is the perfect time to spread joy, connect with others, and embrace life's beautiful moments. Your optimistic outlook is your superpower.</p>
+                </div>
+
+                <div class="music-player">
+                    <div class="player-header">
+                        <h3>Your Happy Playlist</h3>
+                    </div>
+                    <div class="player-controls">
+                        <button class="play-btn" id="playButton">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                        <div class="track-info">
+                            <div class="track-title">Sunny Day Vibes</div>
+                            <div class="track-artist">MoodBuzz Collective</div>
+                        </div>
+                        <div class="volume-control">
+                            <div class="volume-bars">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+
+                <div class="mood-activities">
+                    <h3>Recommended Activities</h3>
+                    <div class="activities-grid">
+                        <div class="activity-card">
+                            <div class="activity-icon">🎨</div>
+                            <span>Creative Expression</span>
+                        </div>
+                        <div class="activity-card">
+                            <div class="activity-icon">🏃</div>
+                            <span>Physical Activity</span>
+                        </div>
+                        <div class="activity-card">
+                            <div class="activity-icon">👥</div>
+                            <span>Social Connection</span>
+                        </div>
+                        <div class="activity-card">
+                            <div class="activity-icon">📚</div>
+                            <span>Learning Something New</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Scan Again Button -->
+        <div class="scan-again-container">
+            <button class="scan-again-button" onclick="window.location.href='index.html'">
+                <span class="button-text">Scan Again</span>
+                <div class="button-glow"></div>
+            </button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 MoodBuzz. Keep shining bright!</p>
+        </footer>
+    </div>
+
+    <script src="src/scripts/mood-player.js"></script>
+</body>
+</html>

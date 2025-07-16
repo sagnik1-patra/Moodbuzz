@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodBuzz - Let Your Mood Play the Music</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Animated Background -->
+        <div class="animated-bg">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-container">
+                <div class="logo-glow"></div>
+                <h1 class="logo">MoodBuzz</h1>
+            </div>
+            <p class="tagline">Let Your Mood Play the Music</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="glass-card main-card">
+                <div class="card-glow"></div>
+                <div class="camera-section">
+                    <div class="camera-preview" id="cameraPreview">
+                        <video id="videoElement" autoplay muted playsinline></video>
+                        <div class="camera-overlay">
+                            <div class="scanning-line"></div>
+                            <div class="corner-brackets">
+                                <div class="bracket top-left"></div>
+                                <div class="bracket top-right"></div>
+                                <div class="bracket bottom-left"></div>
+                                <div class="bracket bottom-right"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="camera-prompt" id="cameraPrompt">
+                        <div class="camera-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                                <circle cx="12" cy="13" r="4"/>
+                            </svg>
+                        </div>
+                        <h2>Ready to Scan Your Mood?</h2>
+                        <p>Allow camera access to detect your current emotional state</p>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button class="scan-button" id="scanButton">
+                        <span class="button-text">Scan My Mood</span>
+                        <div class="button-glow"></div>
+                        <div class="button-ripple"></div>
+                    </button>
+                </div>
+
+                <div class="mood-processing" id="moodProcessing">
+                    <div class="processing-circle">
+                        <div class="processing-dot"></div>
+                        <div class="processing-dot"></div>
+                        <div class="processing-dot"></div>
+                    </div>
+                    <p>Analyzing your mood...</p>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <div class="glass-card info-card">
+                    <h3>How It Works</h3>
+                    <div class="info-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <p>Grant camera permission</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <p>AI analyzes your facial expressions</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <p>Get personalized mood experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 MoodBuzz. Experience the future of emotion.</p>
+        </footer>
+    </div>
+
+    <script src="src/scripts/main.js"></script>
+</body>
+</html>
